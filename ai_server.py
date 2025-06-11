@@ -11,6 +11,10 @@ def analyze(text):
         return {"background_color": "red"}
     else:
         return {"background_color": "gray"}
+        
+@app.route('/')
+def index():
+    return 'Hello from SnakeUp AI Server!'
 
 @app.route('/analyze', methods=['POST'])
 def handle_analyze():
