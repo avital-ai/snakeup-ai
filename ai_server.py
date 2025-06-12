@@ -24,7 +24,7 @@ def get_new_game():
     try:
         # נשלוף משחק חדש מהטבלה
         response = requests.get(
-            f"{SUPABASE_URL}/rest/v1/games?select=*&limit=1",
+            f"{SUPABASE_URL}/rest/v1/music_games?select=*&limit=1",
             headers=SUPABASE_HEADERS
         )
 
